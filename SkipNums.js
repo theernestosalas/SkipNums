@@ -6,7 +6,7 @@ function fizzBuzz(max) {
         final.push(i);
     }
     const endTime = performance.now();
-    return parseFloat(endTime - startTime).toFixed(2); // Time in milliseconds
+    return endTime - startTime; // Time in milliseconds
 }
 
 function fizzBuzzSkipNums(max) {
@@ -19,7 +19,7 @@ function fizzBuzzSkipNums(max) {
         if (i%3!==0) arr.push(i);
     }
     const endTime = performance.now();
-    return parseFloat(endTime - startTime).toFixed(2); // Time in milliseconds
+    return endTime - startTime; // Time in milliseconds
 }
 
 // Run 10 Test. Start with max of 10 Million, increase test size by 10M each itteration.
